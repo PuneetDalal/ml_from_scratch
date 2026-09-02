@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from ml.utils import losses 
-from ml.utils import activations
+from utils import losses 
+from utils import activations
 def predict(X, w, b):
     return X @ w + b
 def compute_gradients(X, y, y_pred):
@@ -36,8 +36,8 @@ def train(X, y, lr, epochs):
 
 if __name__ == "__main__":
     n = 100
-    true_w = 3.5
-    true_b = 2.0
+    true_w = 0.5
+    true_b = 2.9
     noise_scale = 0.5
 
     X = np.random.randn(n, 1)
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     print("Trained w:", w)
     print("True b:", true_b)
     print("Trained b:", b)
-
+    
     plt.plot(loss_history)
     plt.xlabel("Epoch")
     plt.ylabel("MSE Loss")
