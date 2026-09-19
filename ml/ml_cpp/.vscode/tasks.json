@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-I/usr/include/eigen3",
+                "${file}",
+                "${workspaceFolder}/utils/activations.cpp",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+                ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "build with g++ and Eigen."
+        }
+    ],
+    "version": "2.0.0"
+}
