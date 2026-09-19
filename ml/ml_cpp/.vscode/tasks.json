@@ -10,6 +10,7 @@
                 "-I/usr/include/eigen3",
                 "${file}",
                 "${workspaceFolder}/utils/activations.cpp",
+                "${workspaceFolder}/utils/losses.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
                 ],
